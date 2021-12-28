@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.container {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.item {
+    border: 1px solid #dcdcdc;
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 1em;
+    width: 23%;
+    margin: 1%;
+    background-color: #dcdcdc;
+}
+
+.grey {
+    background-color: darkgrey;
+}
+
+.max-wrap {
+    max-width: 1024px;
+}
+
+.frame-text {
+    text-decoration: none;
+    color: #000;
+    margin-left: 3px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.hide {
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .item {
+        float: none;
+        width: auto;
+    }
+    .hide {
+        display: none;
+    }
+}
